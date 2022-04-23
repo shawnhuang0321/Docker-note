@@ -32,9 +32,9 @@
 `docker run -p 8888:8000 [image name]`
 第一個 port 8888 是本機，第二個 port 8000 是 container 的 port
 
-`docker port [image name]`
+`docker port [container name]`
 
-`docker stop [image name]`
+`docker stop [container name]`
 
 `docker build . -t [name]`
 
