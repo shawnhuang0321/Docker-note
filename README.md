@@ -9,16 +9,33 @@
   
 ### Command
 
-`docker run [name]`
+`docker run [image name]`
 
-`docker pull [name]`
+`docker pull [image name]`
 
 `docker images`
 
-`docker run [name] echo "hello world"`
+`docker run [image name] echo "hello world"`
 
 `docker ps`
 
 `docker ps -a`
 
-`docker run -it [name] sh`
+`docker run -it [image name] sh`
+
+`docker rm [container ID]`
+
+`docker rm $(docker ps -a -q -f status=exited)`
+
+`docker container prune`
+
+`docker run -p 8888:8000 [image name]`
+第一個 port 8888 是本機，第二個 port 8000 是 container 的 port
+
+`docker port [image name]`
+
+`docker stop [image name]`
+
+`docker build . -t [name]`
+
+
